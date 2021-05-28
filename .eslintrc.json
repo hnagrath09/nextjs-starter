@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "standard",
+    "plugin:react-hooks/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "path": ["src"]
+      }
+    },
+    "react": {
+      "version": "17.0.2"
+    }
+  },
+  "rules": {
+    "space-before-function-paren": "off",
+    "comma-dangle": "off",
+    "react/self-closing-comp": ["error", { "component": true, "html": true }],
+    "react/no-unknown-property": "error",
+    "react/prop-types": "off",
+    "import/un-resolved": "off",
+    "import/order": [
+      "error",
+      { "groups": ["builtin", "external", "internal"] }
+    ],
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "indent": "off",
+    "no-console": "warn",
+    "no-useless-constructor": "off",
+    "no-unused-expressions": "off",
+    "func-call-spacing": "off",
+    "camelcase": "off",
+    "multiline-ternary": "off"
+  }
+}
